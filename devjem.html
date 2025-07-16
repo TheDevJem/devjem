@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevJem Productions</title>
+  <!-- Material Design Lite -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <style>
+    .page-content {
+      padding: 24px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .portfolio-card {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    .portfolio-card-wide > .mdl-card__title {
+      color: #fff;
+      height: 176px;
+    }
+    .bendabout-card > .mdl-card__title {
+      background: url('https://via.placeholder.com/800x400/3F51B5/FFFFFF?text=Bendabout') center / cover;
+    }
+    .spiritexpress-card > .mdl-card__title {
+      background: url('https://via.placeholder.com/800x400/E91E63/FFFFFF?text=Spirit+Express') center / cover;
+    }
+    .mdl-card__supporting-text {
+      color: rgba(0, 0, 0, 0.87);
+    }
+    .header-section {
+      text-align: center;
+      padding: 48px 24px;
+      background-color: #3F51B5;
+      color: white;
+    }
+    .header-section h1 {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+    .header-section p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .portfolio-section {
+      padding: 48px 24px;
+    }
+    .portfolio-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .portfolio-item {
+      width: 48%;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 768px) {
+      .portfolio-item {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">DevJem Productions</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="header-section">
+        <h1>DevJem Productions</h1>
+        <p>Creating innovative digital experiences</p>
+      </div>
+      
+      <div class="page-content">
+        <div class="portfolio-section">
+          <h2>Our Portfolio</h2>
+          <div class="portfolio-grid">
+            <!-- Bendabout Card -->
+            <div class="portfolio-item">
+              <div class="portfolio-card portfolio-card-wide mdl-card mdl-shadow--2dp bendabout-card">
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Bendabout</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  A showcase of our innovative work on the Bendabout project.
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a href="https://bendabout.devjem.com" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    Visit Bendabout
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Spirit Express Card -->
+            <div class="portfolio-item">
+              <div class="portfolio-card portfolio-card-wide mdl-card mdl-shadow--2dp spiritexpress-card">
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Spirit Express</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  Explore our creative solutions for the Spirit Express platform.
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a href="https://spiritexpress.devjem.com" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    Visit Spirit Express
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__left-section">
+          <div class="mdl-logo">DevJem Productions</div>
+          <ul class="mdl-mini-footer__link-list">
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Privacy & Terms</a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
